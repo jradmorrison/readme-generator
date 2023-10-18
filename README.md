@@ -1,2 +1,1 @@
-# readme-generator
-A professional README generator generated using Node.js
+# Professional README Generator    ## Description    Generates a README.md document for a project using node.js  ## Table of Contents  -[Installation](#installation)  -[Usage](#usage)  -[License](#license)  -[Contribute](#contribute)  -[Test](#tests)  -[Questions](#questions)  ## Installation  N/A  ## Usage  From the root folder of this repo, enter "node index.js" in the terminal then  follow the prompts  ![alt text](assets/images/screenshot.png)  ## License  MIT  ## How to Contribute  N/A  ## Tests  N/A  ## Question?  [My Github](https://github.com/jradmorrison)  jmorrison.m44@gmail.com

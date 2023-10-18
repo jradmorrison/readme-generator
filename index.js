@@ -50,57 +50,58 @@ const questions = [
     },
 ];
 
-// Function to create README and pop
+let fileName = 'README.md'
+
+// Function to create README populate with data built by buildReadMe func
 function writeToFile(fileName, data) {
-    console.log(data);
+    //? console.log(data);
     let readMeContent = buildReadMe(data);
+    //? console.log(readMeContent);
     fs.writeFile(fileName, readMeContent, (err) => err ? console.error(err) : console.log('Document created!'));
 }
 
+// Function to build read me structure using data from prompts
 function buildReadMe(data) {
     //* Title and Description
-    let content = 
-    `#${data.title}
-    
+    let content =
+    `# ${data.title}
+
     ## Description
     
     ${data.description}
     
     `
     //* Table of contents
-    content =+
-     `## Table of Contents
-    
+    content += 
+    `## Table of Contents
     -[Installation](#installation)
     -[Usage](#usage)
     -[License](#license)
     -[Contribute](#contribute)
     -[Test](#tests)
     -[Questions](#questions)
-
+    
     `
     //* Installation and usage
-    content =+
+    content += 
     `## Installation
-
+    
     ${data.installation}
-
     ## Usage
-
     ${data.usage}
-
+    
     ![alt text](assets/images/screenshot.png)
-
+    
     `
     //* License
-    content =+
+    content += 
     `## License
     
     ${data.license}
     
     `
     //* Contributing, tests, and question
-    content =+
+    content += 
     `## How to Contribute
     
     ${data.contribute}
@@ -111,7 +112,8 @@ function buildReadMe(data) {
     
     ## Question?
     
-    ${data.github}
+    [My Github](https://github.com/${data.github})
+    
     ${data.email}`
 
     return content;
@@ -119,7 +121,7 @@ function buildReadMe(data) {
 
 function init() {
     inquirer
-        .prompt(questions).then((response) => writeToFile(fileName, data));
+        .prompt(questions).then((data) => writeToFile(fileName, data));
 }
 
 init();
