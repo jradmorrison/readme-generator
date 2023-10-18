@@ -40,7 +40,9 @@ content +=
 `## Installation
 
 ${data.installation}
+
 ## Usage
+
 ${data.usage}
 
 ![A screenshot of my project](assets/images/screenshot.png)
