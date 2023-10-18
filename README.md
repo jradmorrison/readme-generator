@@ -18,7 +18,9 @@ N/A
 
 ## Usage
 
-From the root folder of this repo run "node index.js" in the terminal
+From the root folder of this repo run "node index.js" in the terminal  
+
+To view a demo of the application being used click here => https://drive.google.com/file/d/1O0DHZraXAZMFimx6Swh3J2qLl7IPkXfs/view
 
 ![A screenshot of my project](assets/images/screenshot.png)
 
