@@ -66,57 +66,57 @@ function buildReadMe(data) {
     let content =
     `# ${data.title}
 
-    ## Description
+## Description
     
-    ${data.description}
+${data.description}
     
-    `
-    //* Table of contents
-    content += 
-    `## Table of Contents
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[License](#license)
-    -[Contribute](#contribute)
-    -[Test](#tests)
-    -[Questions](#questions)
-    
-    `
-    //* Installation and usage
-    content += 
-    `## Installation
-    
-    ${data.installation}
-    ## Usage
-    ${data.usage}
-    
-    ![alt text](assets/images/screenshot.png)
-    
-    `
-    //* License
-    content += 
-    `## License
-    
-    ${data.license}
-    
-    `
-    //* Contributing, tests, and question
-    content += 
-    `## How to Contribute
-    
-    ${data.contribute}
-    
-    ## Tests
-    
-    ${data.tests}
-    
-    ## Question?
-    
-    [My Github](https://github.com/${data.github})
-    
-    ${data.email}`
+`
+//* Table of contents
+content += 
+`## Table of Contents
+-[Installation](#installation)  
+-[Usage](#usage)  
+-[License](#license)  
+-[Contribute](#contribute)  
+-[Test](#tests)  
+-[Questions](#questions)  
 
-    return content;
+`
+//* Installation and usage
+content += 
+`## Installation
+
+${data.installation}
+## Usage
+${data.usage}
+
+![alt text](assets/images/screenshot.png)
+
+`
+//* License
+content += 
+`## License
+
+${data.license}
+
+`
+//* Contributing, tests, and question
+content += 
+`## How to Contribute
+
+${data.contribute}
+
+## Tests
+
+${data.tests}
+
+## Question?
+
+[My Github](https://github.com/${data.github})
+
+${data.email}`
+
+return content;
 }
 
 function init() {
