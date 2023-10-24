@@ -1,8 +1,9 @@
 # Professional README Generator
-
+![readme generator top language](https://img.shields.io/github/languages/top/jradmorrison/readme-generator)
+![readme generator commits](https://img.shields.io/github/commit-activity/t/jradmorrison/readme-generator)
 ## Description
     
-Uses node.js to generates a README.md file for a project. It starts by using Inquirer to prompt questions in the terminal to gather data to populate the README. Then it uses native 'fs' to create the file and populate the document with the data provided.
+Uses node.js to generate a README.md file for a project. It starts by using Inquirer to prompt questions in the terminal to gather data to populate the README. Then it uses native 'fs' to create the file and populate the document with the data provided.
     
 ## Table of Contents
 -[Installation](#installation)  
